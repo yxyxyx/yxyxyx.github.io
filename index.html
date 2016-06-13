@@ -2,16 +2,142 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>于小</title>
-	<link rel="stylesheet" href="./css/index.css"> 
+	<title>baiduyuqing</title>
+<link rel="stylesheet" href="./css/jquery.fullpage.css">
+<link rel="stylesheet" href="./css/index.css">
 </head>
 <body>
- <h2 class="one">欢迎来到个人站</h2>
- <ul>
- <li><a href="/jingdong">京东</a></li>
- <li><a href="/yidong">移动</a></li>
- <li>dy</li>
- <li>jn</li>
- </ul>
+<div id="header">
+<!-- 	<div class="nav">
+		<a href="#" class="mala-logo mala-fl"></a>
+		<div class="mala-fl">
+			<ul class="mala-list">
+				<li class="mala-item mala-fl"><a href="#" class="mala-link active">首页</a></li>
+				<li class="mala-item mala-fl"><a href="#" class="mala-link">我的作品</a></li>
+				<li class="mala-item mala-fl"><a href="#" class="mala-link">我的二维码</a></li>
+			</ul>
+		</div>
+		<div class="nav-help">
+			<a href="#" id="j-app" class="nav-app">手机客户端<i></i></a>
+			<a href="#">百度司南</a>
+			<a href="#" id="content" class="content">联系我们</a>
+			<a href="#" class="yellow">申请试用</a>
+		</div>
+	</div> -->
+</div>
+<div id="fullpage">
+	<div class="section" id="section1">
+	     <div class="wc"></div>
+	     <div class="grz"></div>
+	     <div class="tu"></div>
+	     <div class="zym"></div>
+	     <div class="xinxi">
+	     	<span>姓名：于小</span>
+	     	<span>姓别：男</span>
+	     	<span>出生年月：1993.07.22</span>
+	     	<span>籍贯：山西柳林</span>
+	     	<span>毕业院校：太原大学</span>
+	     	<span>应聘岗位：前端工程师</span>
+	     </div>
+	     <div class="kuang"></div>	 
+	</div>
+	<div class="section" id="section2">
+	     <div class="biao"></div>
+	     <div class="zhao">
+	     	<div class="gzjl"></div>
+	        <div class="gj" id="gj1">
+	     	 <span class="da">合适自己的单位</span>
+	     	 <span class="xiao">
+	     		简介：2016.6--  ，希望立足这座城市,希望加入你们共同发展......
+	     	 </span>
+	        </div>
+	        <div class="gj" id="gj2">
+	     	 <span class="da">辉煌文化艺术有限公司</span>
+	     	 <span class="xiao">
+	     		简介：2015.5--2016.6,任职网络前端工程师,负责静态页面的布局,样式的添加,以及页面动态效果的制作。除此之外,还系统的学习了sass,angular等,提升了自己的个人能力。
+	     	 </span>
+	        </div>
+	        <div class="gj" id="gj3">
+	     	 <span class="da">吕梁华语广告有限公司</span>
+	     	 <span class="xiao">
+	     		简介：2014.12--2015.4,刚从学校出来,从事最基本的工作流程,同时学习一些东西。
+	     	 </span>
+	        </div>
+	        <div class="xn"></div>
+	     </div>
+	     
+	</div>
+	<div class="section" id="section3">
+	     <div class="biao"></div>
+	     <div class="zhezhao">
+	     	<div class="grjn"></div>
+	     	<div class="wzq">
+	     	   <a href="#">
+	     	     <span id="qi"></span>
+	     	     <span>五子棋</span>
+	     	    </a>
+	     	</div>
+	     	<div class="qyy">
+	     	   <a href="#">
+	     	     <span id="yue"></span>
+	     	     <span>QQ音乐</span>
+	     	    </a>
+	     	</div>
+	     	<div class="tcs">
+	     	   <a href="#">
+	     	     <span id="she"></span>
+	     	     <span>贪吃蛇</span>
+	     	    </a>
+	     	</div>
+	     	<div class="dzyx">
+	     	   <a href="#">
+	     	     <span id="zi"></span>
+	     	     <span>打字游戏</span>
+	     	    </a>
+	     	</div>
+	     	<div class="whcl">
+	     	   <a href="#">
+	     	     <span id="long"></span>
+	     	     <span>卧虎藏龙</span>
+	     	    </a>
+	     	</div>
+	     	<div class="zpw">
+	     	   <a href="#">
+	     	     <span id="pai"></span>
+	     	     <span>纸牌屋</span>
+	     	    </a>
+	     	</div>
+	     	<div class="xg">
+	     	   <a href="#">
+	     	     <span id="guan"></span>
+	     	     <span>学管</span>
+	     	    </a>
+	     	</div>
+	     	<div class="zpzs"></div>
+	     </div>	     
+	</div>
+	<div class="section" id="section4">
+	     <div class="biao"></div>
+	     <div class="lxw">联系我</div>
+	     <div class="lianxi">
+	     	<span>邮箱：2272016819@qq.com</span>
+	     	<span>电话：15235384979</span>
+	     	<span>作品网址：yuxiao.github.io</span>
+	     	<span>微信：yjb121000</span>
+	     </div>
+	</div>	
+</div>
+<script src="./js/jquery-1.12.0.js"></script>
+<script src="./js/jquery.fullpage.js"></script>
+<script>
+$(function(){
+     $('#fullpage').fullpage({
+        navigation:true,
+        navigationTooltips:['首页','个人技能','工作经历','联系我'],
+        keyboardScrolling:true,
+        anchors:['for1','for2','for3','for4'],
+     })
+})
+</script>		
 </body>
 </html>
