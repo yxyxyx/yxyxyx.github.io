@@ -20,7 +20,12 @@ a {
   height: 60px;
   font-family: 'Microsoft Yahei';
   background: #168bd8;
-  z-index: 10; }
+  z-index: 10;
+  color: #fff;
+  text-align: center;
+  line-height: 60px;
+  font-size: 36px;
+  font-family: '楷体'; }
 
 #fullpage .section {
   width: 100%;
